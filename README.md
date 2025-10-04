@@ -28,7 +28,6 @@ It showcases a fictional fruit shop with product cards, hover effects, search, f
 
 ---
 
-## 📂 Installation
-1. Clone the repository:
+## 📂 Live Demo
    ```bash
-   git clone https://github.com/yourusername/fresh-fruits.git
+   git clone https://mohamedtantawey.github.io/Fresh-Fruits-Website/
