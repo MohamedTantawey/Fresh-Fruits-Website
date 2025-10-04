@@ -25,9 +25,3 @@ It showcases a fictional fruit shop with product cards, hover effects, search, f
 
 ## 🚀 Live Demo
 👉 [GitHub Pages Link](https://mohamedtantawey.github.io/Fresh-Fruits-Website/) 
-
----
-
-## 📂 Live Demo
-   ```bash
-   git clone https://mohamedtantawey.github.io/Fresh-Fruits-Website/
