@@ -1,0 +1,228 @@
+@"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Fruits - Premium Quality Fruits</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <h2>🍎 Fresh Fruits</h2>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#products" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item cart-item">
+              <a href="#" class="nav-link cart-link" id="cart-link">
+                🛒 Cart (<span id="cart-count">0</span>)
+              </a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-image">
+              <img
+                src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=600&h=400&fit=crop"
+                alt="Fresh colorful fruits display"
+              />
+            </div>
+            <div class="hero-text">
+              <h1>Fresh Fruits Delivered Daily</h1>
+              <p>
+                Experience the finest selection of premium fruits, hand-picked
+                and delivered fresh to your doorstep. From tropical delights to
+                seasonal favorites, we bring nature's sweetness right to you.
+              </p>
+              <div class="hero-buttons">
+                <button
+                  class="btn btn-primary"
+                  onclick="scrollToSection('products')"
+                >
+                  Shop Now
+                </button>
+                <button
+                  class="btn btn-secondary"
+                  onclick="scrollToSection('about')"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="products">
+        <div class="container">
+          <h2 class="section-title">Our Fresh Products</h2>
+          <div class="search-filter">
+            <input
+              type="text"
+              id="product-search"
+              placeholder="Search fruits..."
+              aria-label="Search for fruits"
+            />
+            <select id="category-filter" aria-label="Filter by category">
+              <option value="all">All Categories</option>
+              <option value="tropical">Tropical</option>
+              <option value="citrus">Citrus</option>
+              <option value="berries">Berries</option>
+              <option value="stone-fruits">Stone Fruits</option>
+            </select>
+          </div>
+          <div class="products-grid" id="products-grid"></div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Fresh Fruits</h2>
+          <div class="about-content">
+            <p>
+              At Fresh Fruits, we're passionate about bringing you the highest
+              quality fruits from around the world. Our commitment to freshness,
+              quality, and sustainability drives everything we do.
+            </p>
+            <p>
+              We work directly with local farmers and international suppliers to
+              ensure that every piece of fruit meets our strict quality
+              standards. From the moment our fruits are picked until they reach
+              your table, we maintain the cold chain to preserve their natural
+              goodness.
+            </p>
+            <p>
+              Our mission is simple: to make fresh, delicious, and nutritious
+              fruits accessible to everyone while supporting sustainable farming
+              practices and fair trade.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <h2 class="section-title">What Our Customers Say</h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "The quality of fruits from Fresh Fruits is exceptional! Every
+                  order arrives fresh and perfectly ripe. I've been a customer
+                  for over two years and have never been disappointed."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <h4>Sarah Johnson</h4>
+                <span>Regular Customer</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Amazing variety and the best customer service. They helped me
+                  find the perfect fruits for my daughter's birthday party.
+                  Highly recommended!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <h4>Mike Chen</h4>
+                <span>Happy Parent</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Fast delivery, competitive prices, and the fruits always
+                  taste incredible. Fresh Fruits has become my go-to for all my
+                  fruit needs."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <h4>Emily Rodriguez</h4>
+                <span>Loyal Customer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>🍎 Fresh Fruits</h3>
+            <p>
+              Your trusted source for premium quality fruits delivered fresh
+              daily.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p>📧 info@freshfruits.com</p>
+            <p>📞 (555) 123-FRUIT</p>
+            <p>📍 123 Fruit Street, Garden City</p>
+          </div>
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook">📘</a>
+              <a href="#" aria-label="Instagram">📷</a>
+              <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Fresh Fruits. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="product-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-body" id="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
